@@ -1,0 +1,38 @@
+
+<div class="container">
+    <h2>Publicar Propiedad</h2>
+    <form (submit)="submitProperty()">
+        <div class="form-group">
+            <label for="image">Imagen:</label>
+            <input type="file" id="image" accept="image/*" (change)="onFileSelected($event)">
+        </div>
+        <div class="form-group">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" [(ngModel)]="property.name" name="name">
+        </div>
+        <div class="form-group">
+            <label for="location">Ubicación:</label>
+            <input type="text" id="location" [(ngModel)]="property.location" name="location">
+        </div>
+        <div class="form-group">
+            <label for="price">Precio:</label>
+            <input type="number" id="price" [(ngModel)]="property.price" name="price">
+        </div>
+        <div class="form-group">
+            <label for="type">Tipo:</label>
+            <select id="type" [(ngModel)]="property.type" name="type">
+                <option value="alquiler">Alquiler</option>
+                <option value="venta">Venta</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="area">Metros Cuadrados:</label>
+            <input type="number" id="area" [(ngModel)]="property.area" name="area">
+        </div>
+        <div class="form-group">
+            <label for="description">Descripción:</label>
+            <textarea id="description" [(ngModel)]="property.description" name="description"></textarea>
+        </div>
+        <button type="submit">Publicar</button>
+    </form>
+</div>

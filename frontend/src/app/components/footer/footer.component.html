@@ -1,0 +1,63 @@
+
+<div class="overlay" *ngIf="showDiv">
+    <div class="content">
+        <button (click)="toggleDiv()"><i class="bi bi-x"></i></button>
+        <h3>Elija a quien quiere enviarle un mensaje</h3>
+        <div>
+            <nav>
+                <p> Joaquin Bello: <a href="https://wa.me/5493382504243" target="_blank">3382 50-4243</a> </p>
+
+                <p> Santino Bournot: <a href="https://wa.me/5493462667569" target="_blank">3462 667569</a> </p>
+            </nav>
+        </div>
+
+    </div>
+</div>
+
+
+
+<footer>
+    <div class="grupo-1">
+        <div class="box">
+            <figure>
+
+                <h1>FINDERAR</h1>
+                <!--  <img src="" alt="logo"> -->
+
+            </figure>
+        </div>
+
+        <div class="box">
+            <h2>SOBRE NOSOTROS</h2>
+            <p>Nuestra misión es proporcionar soluciones simples y de alta calidad que ayuden a nuestros clientes a
+                alcanzar sus objetivos. Queremos ser reconocidos por nuestra excelencia, integridad y compromiso con la
+                satisfacción del cliente.</p>
+            <p>Creemos en trabajar juntos, tanto dentro de nuestro equipo como con nuestros clientes, para lograr el
+                éxito mutuo.</p>
+            <h2>EQUIPO</h2>
+            <p> Joaquin Bello</p>
+            <p> Santino Bournot</p>
+        </div>
+
+        <div class="box">
+            <h2>CONTACTOS</h2>
+            <a href="" target="_blank">
+                <i class="bi bi-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/finderar_?igsh=MTlqN3RiNGo4dGh3cQ%3D%3D" target="_blank">
+                <i class="bi bi-instagram"></i>
+            </a>
+            <a (click)="toggleDiv()">
+                <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=DmwnWrRvwTdlZCsbWWPTxcpCBtMxqGtWfccwpWMKpgGJfJMjljPtFjXkxsqwvXMZdlJLKRTjKtBQ"
+                target="_blank">
+                <i class="bi bi-envelope-at-fill"></i>
+            </a>
+        </div>
+    </div>
+
+    .<div class="grupo-2">
+        <p>&copy; 2024 <b>FinderAR</b> Todos los Derechos Reservados.</p>
+    </div>
+</footer>

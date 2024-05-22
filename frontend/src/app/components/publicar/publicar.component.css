@@ -1,0 +1,51 @@
+.container {
+    margin-top: 150px;
+    /*max-width: 700px;*/
+    margin: auto;
+    background: linear-gradient(0deg, #fff, #1E293B);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold; /* Hace que las etiquetas sean más prominentes */
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px; /* Incrementa el tamaño del padding para hacer los campos más espaciosos */
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Agrega bordes redondeados a los campos */
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"] {
+    background-color: #534caf;
+    color: white;
+    padding: 12px 24px; /* Incrementa el padding para que el botón sea más grande */
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; /* Agrega una transición suave al color de fondo */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #7f91da;
+  }
+  
+  
+
+  

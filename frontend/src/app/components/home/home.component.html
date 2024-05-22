@@ -1,0 +1,34 @@
+<section class="cont">    
+
+    <div class="cont__fondo">
+        <video class="video-fondo" autoplay muted loop>
+            <source src="../../../assets/videos/inicio/fondo.mp4" type="video/mp4">
+        </video>
+    </div>
+    
+    <div class="cont__title">
+    
+        <h1 class="bienvenido">FINDERAR</h1>
+        <h2 class="subtitulo">Tu sueño, tu espacio, nuestra misión.</h2>
+    
+    </div>
+    
+    <div class="cont__div" [style.transform]="'translateY(' + translateYValue + ')'">
+        <nav class="cont__img">
+            <img class="img" src="../../../assets/img/inicio/img1.jpg" alt="">
+        </nav>
+    
+        <nav class="cont__img">
+            <img class="img" src="../../../assets/img/inicio/img2.jpg" alt="">
+        </nav>
+    
+        <nav class="cont__img">
+            <img class="img" src="../../../assets/img/inicio/img3.jpg" alt="">
+        </nav>
+    </div>
+</section>
+
+<div class="cont__componentes">
+    <app-main></app-main>
+    <app-footer></app-footer>
+</div>

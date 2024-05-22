@@ -1,0 +1,82 @@
+
+.menu-original {
+    position: absolute;
+    width: 100%;
+    background: #ffffff00;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.menu-modificado{
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+    padding: 20px 0;
+}
+
+.menu-original ul, .menu-modificado ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /*palabras centradas*/
+    align-items: center;
+}
+
+.menu-original li, .menu-modificado li{
+    margin: 0 3vw; /* Espacio entre cada palabra */
+}
+
+.menu-original li a, .menu-modificado li a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: clamp(18px, 1.6vw, 25px);
+    font-weight: 600;
+    transition: .5s ease-in-out;
+    mix-blend-mode: difference;
+    font-family: 'Courier New', monospace;
+}
+
+.menu-original li a:hover {
+    background: #916233;  
+    transition: .7s ease-in-out;
+    color: #d4d0d0;
+    transform: scale(1.05);
+}
+
+.menu-modificado li a:hover{
+    background: #d4d0d0;  
+    transition: .7s ease-in-out;
+    color: #000;
+    transform: scale(1.05);
+}
+
+.cont__ciudades{
+    background: #916233;
+    z-index: 10000;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    
+}
+
+.cont__ciudades ul{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.cont__ciudades li{
+    text-decoration: none;
+}
+
+.cont__ciudades li a{
+    color: #d4d0d0;
+    
+}

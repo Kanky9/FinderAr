@@ -1,0 +1,43 @@
+<section>
+
+    <div class="cont">
+
+        <div class="cont-title">
+            <h3> Cambia tu contraseña enviando un mail</h3>
+        </div>
+
+
+        <form [formGroup]="form" (ngSubmit)="submit()" (keypress.enter)="submit()">
+
+            <input 
+                formControlName="email" 
+                autocomplete="email" 
+                type="email" 
+                placeholder="Correo"
+            >
+
+            <!--  ========== Email Validators ==========  -->
+
+            <div class="validators" *ngIf="form.controls.email.errors && form.controls.email.touched">
+
+                <div *ngIf="form.controls.email">
+                    <p>El correo es requerido.</p>
+                </div>
+
+                <div *ngIf="form.controls.email.errors?.['email']">
+                    <p>El correo debe ser válido.</p>
+                </div>
+
+            </div>
+
+            <!--  ========== Botones ========== -->
+
+            <button class="submit" type="submit" [disabled]="form.invalid">
+                Enviar
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
